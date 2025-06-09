@@ -19,8 +19,8 @@ async def get_gimbals(drone, timeout=10):
                     f"Vendor={gimbal.vendor_name}, "
                     f"Device ID={gimbal.gimbal_device_id}"
                 )
-                gimbals_found.append(gimbal)
-        return
+                
+        return gimbals_found.append(gimbal)
 
     try:
         # Apply timeout to async loop
